@@ -11,7 +11,7 @@ class ConfigurableWidget
 public:
     void configure()
     {
-        configureLayaut();
+        configureLayout();
         addWidgets();
         configureWidgets();
         connectWidgets();
@@ -20,7 +20,7 @@ public:
 protected:
     QLayout* mainLayout;
 
-    virtual void configureLayaut() = 0;
+    virtual void configureLayout() = 0;
     virtual void addWidgets() = 0;
     virtual void configureWidgets() = 0;
     virtual void connectWidgets() = 0;
